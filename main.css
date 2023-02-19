@@ -159,7 +159,7 @@ a:hover {
     margin: auto;
 }
 
-.landing-block, .project {
+.landing-block {
     max-width: 600px;
 }
 
@@ -213,7 +213,8 @@ a:hover {
 
 .project {
     margin-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    max-width: 1000px;
 }
 
 .project-title {
