@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Courier+Prime|Labrada|Quicksand');
 
 :root {
     --main-bg-colour: #ffffff;
@@ -24,6 +24,12 @@ a:hover {
 
 .fixed-top {  
     border-bottom: var(--accent-colour) 1px solid;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 700;
+    background-color: var(--main-bg-colour);
 }
 
 .navbar {
@@ -66,18 +72,6 @@ a:hover {
     transition: 0.2s;
     transition-property: color;
     color: var(--hover-colour);
-}
-
-.email-link {
-    border: var(--accent-colour) 2px solid;
-    padding: 8px 10px;
-    background: var(--secondary-background-colour);
-}
-
-.email-link:hover {
-    transition: 0.2s;
-    transition-property: color, border;
-    border: var(--hover-colour) 2px solid;
 }
 
 .navbar-toggler {
@@ -156,4 +150,91 @@ a:hover {
 
 .nav-overlay a:hover {
     color: white;
+}
+
+#landing-top {
+    height: 55vh;
+    min-height: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.landing-block, .project {
+    max-width: 600px;
+}
+
+.align-items-centre {
+    display: flex!important;
+    align-items: center!important;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.landing-title {
+    font-family: "Courier Prime", "sans-serif";
+    font-size: 40pt;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.landing-content {
+    font-family: "Quicksand", "sans-serif";
+    font-size: 16pt;
+    margin-top: 0px;
+}
+
+.featured-link {
+    padding-bottom: 3px;
+    border-bottom: var(--accent-colour) solid 1px;
+    color: var(--main-text-colour);
+    font-weight: 400;
+    font-size: 16pt;
+    margin-right: 10px
+}
+
+.featured-link:hover {
+    color: var(--hover-colour);
+    border-color: var(--hover-colour);
+    transition: 0.2s;
+}
+
+.section-title {
+    font-size: 32pt;
+    font-family: "Courier Prime", "sans-serif";
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.project {
+    margin-top: 10px;
+    padding-bottom: 10px
+}
+
+.project-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24pt;
+    font-family: "Labrada", monospace;
+    display: inline;
+}
+
+.project-tools {
+    display: inline;
+    font-style: italic;
+    font-family: "Labrada", monospace;
+    font-size: 16pt;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.project-content {
+    margin-top: 0px;
+    font-size: 16pt;
 }
