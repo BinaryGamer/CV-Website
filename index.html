@@ -4,9 +4,22 @@
         <title>Liam Smith</title>
         <link rel="stylesheet" href="main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+
     </head>
     <body>
+        <div class="nav-overlay" id="nav-overlay">
+            <span id="overlay-close" class="nav-close">
+                <i class="fa fa-circle-xmark"></i>
+            </span>
+            <div class="overlay-content">
+                <strong>
+                <a href="https://github.com/BinaryGamer">Github</a>
+                <a href="https://www.linkedin.com/in/liam-smith-350233264/">Linkedin</a>
+                <a href="mailto:liamr.smith@outlook.com">Email</a>
+                </strong>
+            </div>
+        </div>
         <div class="fixed-top">
             <nav class="navbar">
                 <div class="navbar-name">
@@ -14,7 +27,7 @@
                 </div>
 
                 <div class="navbar-elements-thin">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <button id="overlay-open" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                         <i class="fa fa-list"></i>
                     </button>
                 </div>
@@ -31,6 +44,6 @@
         </div>
         <h1><i class="fa fa-home"></i>Main page not created yet</h1>
         <p>For CTF go to <a href="http://ctf.liamsmith.work">http://ctf.liamsmith.work</a></p>
-        
+        <script src="main.js"></script>
     </body>
 </html>

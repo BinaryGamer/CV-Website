@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--main-text-colour)
+}
+
 .fixed-top {  
     border-bottom: var(--accent-colour) 1px solid;
 }
@@ -94,7 +98,7 @@ a {
 }
 
 @media (min-width: 980px){
-    .navbar-toggler {
+    .navbar-toggler, .nav-overlay {
         display: none;
     }
 }
@@ -103,4 +107,53 @@ a {
     .navbar-elements-wide {
         display: none;
     }
+}
+
+.nav-overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.95;
+    background-color: var(--hover-colour);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index:999999!important;
+}
+
+.nav-close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 24px;
+    color: var(--main-text-colour);
+    cursor: pointer;
+}
+
+.nav-close:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.overlay-content {
+    position:relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-overlay a {
+    padding: 8px;
+    font-size: 36px;
+    text-decoration: solid;
+    display: block;
+    transition: 0.3s;
+    font-family: "Roboto Mono",monospace;
+}
+
+.nav-overlay a:hover {
+    color: white;
 }
